@@ -1,0 +1,1682 @@
+[
+  {
+    "task_id": "navi_bench/rent/chicago_pet_ac_fiber/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in Chicago, IL that are pet-friendly, have air conditioning and  AT&T Fiber internet.",
+      "location": "Chicago, IL, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/illinois/chicago/apartments_townhouses_condos_houses_air-conditioning_att-fiber_pet-friendly?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "chicago_pet_ac_fiber",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/chicago_apartments_beds/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find studio, 1-bedroom and 2-bedroom apartments for rent in Chicago, IL.",
+      "location": "Chicago, IL, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/illinois/chicago-apartments/studio_1-bedroom_2-bedroom?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "chicago_apartments_beds",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/chicago_furnished_max_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished apartments, townhouses, condos and houses for rent in Chicago, IL with a maximum price of $1,700.",
+      "location": "Chicago, IL, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/illinois/chicago/apartments_townhouses_condos_houses_max-price-1700_furnished?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "chicago_furnished_max_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/denver_beds_baths_elevator/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in Denver, CO with 2 to 3 bedrooms, having at least 2 bathrooms and an elevator.",
+      "location": "Denver, CO, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/colorado/denver/apartments_townhouses_condos_houses_2-bedroom_3-bedroom_2-bathroom_elevator"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "denver_beds_baths_elevator",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/denver_furnished_houses_dog/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished houses for rent in Denver, CO that are dog-friendly.",
+      "location": "Denver, CO, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/colorado/denver-houses/furnished_dog-friendly?property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "denver_furnished_houses_dog",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/denver_price_laundry_size/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Denver, CO under $2,000 with an in-unit washer, dryer and at least having an area of 1,000 square feet.",
+      "location": "Denver, CO, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/colorado/denver/apartments_townhouses_condos_houses_max-price-2000_washer-dryer-in-unit_sqft-min-1000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "denver_price_laundry_size",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/cambridge_furnished_laundry_size/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished 2-bedroom apartments, townhouses, condos and houses for rent in Cambridge, MA with a laundry facility and at least 500 square feet.",
+      "location": "Cambridge, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/cambridge/apartments_townhouses_condos_houses_2-bedroom_furnished_laundry-facility_sqft-min-500"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "cambridge_furnished_laundry_size",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_fitness_sort_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Boston, MA with a fitness center facility and sorted by lowest price.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_fitness-center_sort-price-low"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_fitness_sort_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_apts_price_range_fitness/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments and townhouses for rent in Boston, MA priced between $2,000 and $2,800 with a fitness center, sorted by lowest price.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/townhouses_apartments_min-price-2000_max-price-2800_fitness-center_sort-price-low"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_apts_price_range_fitness",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/la_price_amenities_sort/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find homes for rent in Los Angeles, CA priced under $2,500 with a pool and fitness center, sorted by lowest price.",
+      "location": "Los Angeles, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/los-angeles/apartments_townhouses_condos_houses_max-price-2500_fitness-center_pool_sort-price-low"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "la_price_amenities_sort",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_min_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in Kansas City, MO with a minimum price of $1,200.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_min-price-1200?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_min_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_2_baths/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in Kansas City, MO with exactly 2 bathrooms.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_2-bathroom?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_2_baths",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_studio/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find studio apartments, townhouses, condos, and houses for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_studio?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_studio",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_apartments/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city-apartments?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_apartments",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_cat_friendly_houses/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find cat-friendly houses for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city-houses/cat-friendly?source=homepage&property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_cat_friendly_houses",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_furnished/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished apartments, townhouses, condos, and houses for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_furnished?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_furnished",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_senior_living/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find senior living apartments, townhouses, condos, and houses for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_senior-living?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_senior_living",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_3bed_2bath_pet_friendly/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find pet-friendly 3-bedroom, 2-bathroom apartments, townhouses, condos and houses for rent in Kansas City, MO.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_3-bedroom_2-bathroom_pet-friendly?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_3bed_2bath_pet_friendly",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_min_sqft/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Kansas City, MO with a minimum area of 800 square feet.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_sqft-min-800?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_min_sqft",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/kansas_city_2bed_internet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments, townhouses, condos, and houses for rent in Kansas City, MO with high-speed internet access.",
+      "location": "Kansas City, MO, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/missouri/kansas-city/apartments_townhouses_condos_houses_2-bedroom_high-speed-internet-access?source=homepage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "kansas_city_2bed_internet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_2bed_max_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find two bedroom apartments, townhouses, condos and houses for rent in Boston, MA with a maximum price of $2,000.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_2-bedroom_max-price-2000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_2bed_max_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_1bed_1bath_houses/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find one bedroom, one bathroom houses for rent in Boston, MA.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston-houses/1-bedroom_1-bathroom?property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_1bed_1bath_houses",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_ac_pet_friendly/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find pet-friendly apartments, townhouses, condos and houses for rent in Boston, MA with air conditioning.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_air-conditioning_pet-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_ac_pet_friendly",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_2to4_beds_dishwasher/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Boston, MA with 2, 3 or 4 bedrooms and having a dishwasher.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_2-bedroom_3-bedroom_4-bedroom_dishwasher"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_2to4_beds_dishwasher",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_2bed_deals/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments, townhouses, condos and houses for rent in Boston, MA offering rent deals or specials.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_2-bedroom_rent-deals-specials"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_2bed_deals",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_1bed_townhouses/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 1-bedroom townhouses for rent in Boston, MA.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston-townhouses/1-bedroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_1bed_townhouses",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_elevator_patio/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Boston, MA that feature an elevator and a patio.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_elevator_patio"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_elevator_patio",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_ev_pool_view/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Boston, MA with EV charging, a swimming pool and having a view.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_ev-charging_pool_view"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_ev_pool_view",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_apts_townhouses_2bed/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments and townhouses for rent in Boston, MA.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_2-bedroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_apts_townhouses_2bed",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/boston_price_range/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Boston, MA priced between $1,000 and $1,500.",
+      "location": "Boston, MA, United States",
+      "timezone": "America/New_York",
+      "gt_urls": [
+        [
+          "https://www.rent.com/massachusetts/boston/apartments_townhouses_condos_houses_min-price-1000_max-price-1500"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "boston_price_range",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_beds_baths_min_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2 to 3-bedroom and 1-bathroom apartments, townhouses, condos and houses for rent in San Diego, CA with a minimum price of $1,000.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_2-bedroom_3-bedroom_1-bathroom_min-price-1000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_beds_baths_min_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_apts_condos_price_range/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses and condos for rent in San Diego, CA priced between $1,200 and $2,000.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_min-price-1200_max-price-2000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_apts_condos_price_range",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_ev_charging/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in San Diego, CA having the facility of EV charging.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_ev-charging"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_ev_charging",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_att_fiber_dog/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find dog-friendly apartments, townhouses, condos and houses for rent in San Diego, CA with AT&T Fiber internet.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_att-fiber_dog-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_att_fiber_dog",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_studio_1bed_2bath/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find studio and 1-bedroom apartments, townhouses, condos, and houses for rent in San Diego, CA having exactly 2 bathrooms.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_studio_1-bedroom_2-bathroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_studio_1bed_2bath",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_4bed_houses/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 4 or more than 4 bedroom houses for rent in San Diego, CA.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego-houses/4-bedroom?property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_4bed_houses",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_apts_ac_fiber_internet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments for rent in San Diego, CA with air conditioning, AT&T Fiber and high-speed internet access.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego-apartments/air-conditioning_att-fiber_high-speed-internet-access"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_apts_ac_fiber_internet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_washer_senior/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find senior living apartments, townhouses, condos and houses for rent in San Diego, CA with an in-unit washer and dryer facility.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_washer-dryer-in-unit_senior-living"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_washer_senior",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_2bed_sqft/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments, townhouses, condos, and houses for rent in San Diego, CA with at least 1,000 square feet area.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/apartments_townhouses_condos_houses_2-bedroom_sqft-min-1000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_2bed_sqft",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/san_diego_condos_houses_fitness_pet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find pet-friendly condos and houses for rent in San Diego, CA having a fitness center.",
+      "location": "San Diego, CA, United States",
+      "timezone": "America/Los_Angeles",
+      "gt_urls": [
+        [
+          "https://www.rent.com/california/san-diego/condos_houses_fitness-center_pet-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "san_diego_condos_houses_fitness_pet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_beds_baths/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Dallas, TX with 2 to 3 bedrooms and exactly 2 bathrooms.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_2-bedroom_3-bedroom_2-bathroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_beds_baths",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_hardwood_cat_friendly/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find cat-friendly apartments, townhouses, condos and houses for rent in Dallas, TX with hardwood floors.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_hardwood-floor_cat-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_hardwood_cat_friendly",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_dishwasher_internet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Dallas, TX with a dishwasher and high-speed internet access.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_dishwasher_high-speed-internet-access"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_dishwasher_internet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_beds_pool/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos, and houses for rent in Dallas, TX with 1, 2 or 3 bedrooms and having a pool.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_1-bedroom_2-bedroom_3-bedroom_pool"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_beds_pool",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_townhouses_houses_min_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find townhouses and houses for rent in Dallas, TX priced above $1,000.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/townhouses_houses_min-price-1000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_townhouses_houses_min_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_3bed_3bath_max_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Dallas, TX with exactly 3 bedrooms, exactly 3 bathrooms and a maximum price of $2,000.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_3-bedroom_3-bathroom_max-price-2000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_3bed_3bath_max_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_dishwasher_patio/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Dallas, TX with a dishwasher and a patio.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_dishwasher_patio"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_dishwasher_patio",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_apartments_ev_fitness/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments for rent in Dallas, TX having EV charging and a fitness center.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas-apartments/ev-charging_fitness-center"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_apartments_ev_fitness",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_garage_hardwood/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Dallas, TX with a garage and hardwood floors.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_garage_hardwood-floor"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_garage_hardwood",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/dallas_2bed_price_sqft/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments, townhouses, condos and houses for rent in Dallas, TX priced between $700 to $1,000, with at least 700 square feet area.",
+      "location": "Dallas, TX, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/texas/dallas/apartments_townhouses_condos_houses_2-bedroom_min-price-700_max-price-1000_sqft-min-700"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "dallas_2bed_price_sqft",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_1to2bed_ac_pet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 1 to 2-bedroom pet-friendly apartments, townhouses, condos and houses for rent in Salt Lake City, UT with air conditioning.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city/apartments_townhouses_condos_houses_1-bedroom_2-bedroom_air-conditioning_pet-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_1to2bed_ac_pet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_apts_2bed_furnished/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished 2-bedroom apartments for rent in Salt Lake City, UT.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city-apartments/2-bedroom_furnished"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_apts_2bed_furnished",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_apts_2to3bed_2bath/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2 to 3-bedroom apartments for rent in Salt Lake City, UT with exactly 2 bathrooms.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city-apartments/2-bedroom_3-bedroom_2-bathroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_apts_2to3bed_2bath",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_houses_ac_pet/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find pet-friendly houses for rent in Salt Lake City, UT with air conditioning.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city-houses/air-conditioning_pet-friendly?property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_houses_ac_pet",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_apts_2bed_max_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom apartments for rent in Salt Lake City, UT with a maximum price of $1,500.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city-apartments/2-bedroom_max-price-1500"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_apts_2bed_max_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_apts_condos_studio_price_washer/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find studio apartments and condos for rent in Salt Lake City, UT priced under $1,500 with an in-unit washer and dryer.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city/apartments_condos_studio_max-price-1500_washer-dryer-in-unit"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_apts_condos_studio_price_washer",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_price_senior_dog/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find dog-friendly senior living apartments, townhouses, condos and houses for rent in Salt Lake City, UT with a maximum price of $2,000.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city/apartments_townhouses_condos_houses_max-price-2000_senior-living_dog-friendly"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_price_senior_dog",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_elevator_fitness/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Salt Lake City, UT featuring an elevator and a fitness center.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city/apartments_townhouses_condos_houses_elevator_fitness-center"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_elevator_fitness",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_apts_dishwasher_patio_pool_view/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments for rent in Salt Lake City, UT with a dishwasher, a patio, a pool and having a view.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city-apartments/dishwasher_patio_pool_view"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_apts_dishwasher_patio_pool_view",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/salt_lake_city_townhouses_houses_furnished_garage/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished townhouses and houses for rent in Salt Lake City, UT with a garage.",
+      "location": "Salt Lake City, UT, United States",
+      "timezone": "America/Denver",
+      "gt_urls": [
+        [
+          "https://www.rent.com/utah/salt-lake-city/townhouses_houses_furnished_garage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "salt_lake_city_townhouses_houses_furnished_garage",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_ac_no_pets/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments, townhouses, condos and houses for rent in Milwaukee, WI with air conditioning and no pets allowed.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_condos_houses_air-conditioning_no-pets"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_ac_no_pets",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_1to2bed_max_price/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 1 to 2-bedroom apartments, townhouses, condos and houses for rent in Milwaukee, WI with a maximum price of $1,000.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_condos_houses_1-bedroom_2-bedroom_max-price-1000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_1to2bed_max_price",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_townhouses_condos/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find townhouses and condos for rent in Milwaukee, WI.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/townhouses_condos"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_townhouses_condos",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_2bed_2bath_price_dishwasher/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom, 2-bathroom apartments, townhouses, condos and houses for rent in Milwaukee, WI with a maximum price of $1,500 and a dishwasher.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_condos_houses_2-bedroom_2-bathroom_max-price-1500_dishwasher"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_2bed_2bath_price_dishwasher",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_beds_baths_price_fitness/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 1 to 3-bedroom apartments, townhouses, condos and houses for rent in Milwaukee, WI with 2 to 3 bathrooms, a maximum price of $1,700 and a fitness center.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_condos_houses_1-bedroom_2-bedroom_3-bedroom_2-bathroom_3-bathroom_max-price-1700_fitness-center"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_beds_baths_price_fitness",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_furnished_garage/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find furnished apartments, townhouses, condos and houses for rent in Milwaukee, WI with a garage.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_condos_houses_furnished_garage"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_furnished_garage",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_houses_min_sqft/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find houses for rent in Milwaukee, WI with a minimum area of 1,500 square feet.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee-houses/sqft-min-1500?property-type=houses"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_houses_min_sqft",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_condos_2bed_1bath/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2-bedroom, 1-bathroom condos for rent in Milwaukee, WI.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee-condos/2-bedroom_1-bathroom"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_condos_2bed_1bath",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_apts_ac_fiber_dishwasher_patio/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find apartments for rent in Milwaukee, WI with air conditioning, AT&T Fiber internet, a dishwasher and a patio.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee-apartments/air-conditioning_att-fiber_dishwasher_patio"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_apts_ac_fiber_dishwasher_patio",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  },
+  {
+    "task_id": "navi_bench/rent/milwaukee_apts_townhouses_beds_price_range/0",
+    "task_generation_config_json": {
+      "_target_": "navi_bench.rent.rent_url_match.generate_task_config",
+      "url": "https://www.rent.com/",
+      "task": "Find 2 to 4-bedroom apartments and townhouses for rent in Milwaukee, WI priced between $1,700 and $2,000.",
+      "location": "Milwaukee, WI, United States",
+      "timezone": "America/Chicago",
+      "gt_urls": [
+        [
+          "https://www.rent.com/wisconsin/milwaukee/apartments_townhouses_2-bedroom_3-bedroom_4-bedroom_min-price-1700_max-price-2000"
+        ]
+      ]
+    },
+    "env": "real",
+    "domain": "rent",
+    "l1_category": "realestate",
+    "l2_category": "milwaukee_apts_townhouses_beds_price_range",
+    "suggested_difficulty": null,
+    "suggested_hint": null,
+    "suggested_max_steps": null,
+    "suggested_split": "validation",
+    "metadata_json": null
+  } 
+]
