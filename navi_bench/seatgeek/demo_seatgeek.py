@@ -22,13 +22,21 @@ class BrowserConfig:
     )
     locale: str = "en-US"
     
-    # Anti-detection arguments (Crucial for Ticketmaster)
+    # Anti-detection arguments
     launch_args: list = field(default_factory=lambda: [
         "--disable-blink-features=AutomationControlled",
         "--disable-infobars",
-        "--start-maximized",
         "--no-sandbox",
-        "--disable-web-security",
+        "--disable-dev-shm-usage",
+        "--no-first-run",
+        "--no-default-browser-check",
+        "--disable-default-apps",
+        "--disable-extensions",
+        "--disable-plugins-discovery",
+        "--disable-translate",
+        "--metrics-recording-only",
+        "--use-mock-keychain",
+        "--window-size=1366,768",
     ])
 
 @dataclass
@@ -264,33 +272,139 @@ class BrowserManager:
             },
             user_agent=self.config.user_agent,
             locale=self.config.locale,
+            timezone_id="America/New_York",
+            color_scheme="no-preference",
+            extra_http_headers={
+                "Accept-Language": "en-US,en;q=0.9",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Encoding": "gzip, deflate, br",
+                "sec-ch-ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": '"Windows"',
+                "sec-fetch-dest": "document",
+                "sec-fetch-mode": "navigate",
+                "sec-fetch-site": "none",
+                "sec-fetch-user": "?1",
+                "upgrade-insecure-requests": "1",
+            },
         )
         
-        # Anti-detection scripts - highly important for PerimeterX/DataDome
+        # Anti-detection scripts - PerimeterX / HUMAN Security evasion
         await self.context.add_init_script("""
-            // Hide webdriver property
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => undefined
+            // 1. Remove navigator.webdriver
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+
+            // 2. Full chrome object (minimal chrome object is a known detection signal)
+            window.chrome = {
+                app: {
+                    isInstalled: false,
+                    getDetails: function() {},
+                    getIsInstalled: function() {},
+                    installState: function() {},
+                    runningState: function() {},
+                },
+                runtime: {
+                    OnInstalledReason: {
+                        CHROME_UPDATE: 'chrome_update', INSTALL: 'install',
+                        SHARED_MODULE_UPDATE: 'shared_module_update', UPDATE: 'update'
+                    },
+                    PlatformOs: {
+                        ANDROID: 'android', CROS: 'cros', LINUX: 'linux',
+                        MAC: 'mac', OPENBSD: 'openbsd', WIN: 'win'
+                    },
+                    PlatformArch: {
+                        ARM: 'arm', ARM64: 'arm64', MIPS: 'mips',
+                        MIPS64: 'mips64', X86_32: 'x86-32', X86_64: 'x86-64'
+                    },
+                    RequestUpdateCheckStatus: {
+                        NO_UPDATE: 'no_update', THROTTLED: 'throttled',
+                        UPDATE_AVAILABLE: 'update_available'
+                    },
+                },
+                csi: function() {},
+                loadTimes: function() {},
+            };
+
+            // 3. Navigator properties matching a real Windows Chrome user
+            Object.defineProperty(navigator, 'platform', { get: () => 'Win32' });
+            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+            Object.defineProperty(navigator, 'hardwareConcurrency', { get: () => 8 });
+            Object.defineProperty(navigator, 'deviceMemory', { get: () => 8 });
+            Object.defineProperty(navigator, 'maxTouchPoints', { get: () => 0 });
+            Object.defineProperty(navigator, 'vendor', { get: () => 'Google Inc.' });
+            Object.defineProperty(navigator, 'appVersion', {
+                get: () => '5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             });
-            
-            // Override chrome.runtime
-            window.chrome = { runtime: {} };
-            
-            // Override permissions query
-            const originalQuery = window.navigator.permissions.query;
+
+            // 4. Realistic plugin list (empty plugins = headless signal)
+            const pluginData = [
+                { name: 'Chrome PDF Plugin', filename: 'internal-pdf-viewer', description: 'Portable Document Format' },
+                { name: 'Chrome PDF Viewer', filename: 'mhjfbmdgcfjbbpaeojofohoefgiehjai', description: '' },
+                { name: 'Native Client', filename: 'internal-nacl-plugin', description: '' },
+            ];
+            const fakePlugins = pluginData.map(({ name, filename, description }) => {
+                const plugin = { name, filename, description, length: 0 };
+                return plugin;
+            });
+            Object.defineProperty(navigator, 'plugins', {
+                get: () => {
+                    const arr = [...fakePlugins];
+                    arr.length = fakePlugins.length;
+                    return arr;
+                }
+            });
+            Object.defineProperty(navigator, 'mimeTypes', {
+                get: () => []
+            });
+
+            // 5. Permissions query override
+            const _origPermQuery = window.navigator.permissions.query;
             window.navigator.permissions.query = (parameters) => (
-                parameters.name === 'notifications' ?
-                    Promise.resolve({ state: Notification.permission }) :
-                    originalQuery(parameters)
+                parameters.name === 'notifications'
+                    ? Promise.resolve({ state: Notification.permission })
+                    : _origPermQuery(parameters)
             );
-            
-            // WebGL fingerprint spoofing
-            const getParameter = WebGLRenderingContext.prototype.getParameter;
+
+            // 6. WebGL vendor/renderer spoofing (UNMASKED_VENDOR_WEBGL / UNMASKED_RENDERER_WEBGL)
+            const _origGetParam = WebGLRenderingContext.prototype.getParameter;
             WebGLRenderingContext.prototype.getParameter = function(parameter) {
                 if (parameter === 37445) return 'Intel Inc.';
                 if (parameter === 37446) return 'Intel Iris OpenGL Engine';
-                return getParameter.call(this, parameter);
+                return _origGetParam.call(this, parameter);
             };
+            const _origGetParam2 = WebGL2RenderingContext.prototype.getParameter;
+            WebGL2RenderingContext.prototype.getParameter = function(parameter) {
+                if (parameter === 37445) return 'Intel Inc.';
+                if (parameter === 37446) return 'Intel Iris OpenGL Engine';
+                return _origGetParam2.call(this, parameter);
+            };
+
+            // 7. Canvas fingerprint noise (subtle per-session pixel shift)
+            const _origToDataURL = HTMLCanvasElement.prototype.toDataURL;
+            HTMLCanvasElement.prototype.toDataURL = function(type, ...args) {
+                const ctx = this.getContext('2d');
+                if (ctx && this.width > 0 && this.height > 0) {
+                    const imageData = ctx.getImageData(0, 0, 1, 1);
+                    imageData.data[0] ^= 1;
+                    ctx.putImageData(imageData, 0, 0);
+                }
+                return _origToDataURL.apply(this, [type, ...args]);
+            };
+
+            // 8. Screen dimensions consistent with viewport
+            Object.defineProperty(screen, 'width', { get: () => 1366 });
+            Object.defineProperty(screen, 'height', { get: () => 768 });
+            Object.defineProperty(screen, 'availWidth', { get: () => 1366 });
+            Object.defineProperty(screen, 'availHeight', { get: () => 728 });
+            Object.defineProperty(screen, 'colorDepth', { get: () => 24 });
+            Object.defineProperty(screen, 'pixelDepth', { get: () => 24 });
+
+            // 9. Hide Playwright/CDP traces
+            delete window.__playwright;
+            delete window.__pw_manual;
+            delete window.__PW_inspect;
+            delete window.callPhantom;
+            delete window._phantom;
         """)
         
         self.page = await self.context.new_page()
