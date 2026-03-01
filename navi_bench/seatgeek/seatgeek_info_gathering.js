@@ -62,7 +62,7 @@
                 if (!text) return null;
                 const clean = text.toLowerCase().trim();
 
-                let match = text.match(/(\d{4})-(\d{2})-(\d{2})/);
+                let match = clean.match(/(\d{4})-(\d{2})-(\d{2})/);
                 if (match) return match[0];
 
                 match = text.match(/(?:[a-z]{3}\s*•\s*)?([a-z]{3})\s+(\d{1,2}),?\s*(\d{4})/i);
@@ -114,8 +114,10 @@
                 .replace(/^\/|\/$/g, '')
                 .toLowerCase();
 
-            const slug = pathname.replace('-tickets', '');
-            if (CATEGORY_SLUGS.has(slug)) return 'sports';
+            const sports_category = ['sports', 'nba', 'nfl', 'mlb', 'nhl', 'mls', 'ncaa-basketball', 'ncaa-football', 'tennis', 'golf', 'boxing', 'wwe'];
+
+            const slug = pathname.replace(/-tickets$/, '');
+            if (sports_category.includes(slug) ) return 'sports';
             if (slug === 'concert') return 'concerts';
             if (slug === 'theater') return 'theater';
             if (slug === 'comedy') return 'comedy';
@@ -164,7 +166,7 @@
                                 source: "ld+json",
                                 eventType: types[0] || null,
                                 eventName: item.name || null,
-                                date: startDate,   
+                                date: startDate,
                                 time: startTime,
                                 venue: location.name || null,
                                 city: address.addressLocality || null,
@@ -192,7 +194,7 @@
             const collected = [];
 
             try {
-                const container = document.querySelectorAll('[data-testid="listing-item"]');
+                const container = document.querySelector('[data-testid="listing-item"]');
                 if (!container) return [];
 
                 const rows = container.querySelectorAll('button[aria-label]');

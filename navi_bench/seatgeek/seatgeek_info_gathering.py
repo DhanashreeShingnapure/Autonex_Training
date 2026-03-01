@@ -36,7 +36,7 @@ class MultiCandidateQuery(TypedDict, total=False):
     dates: list[str] | None
     times: list[str] | None
     venues: list[str] | None
-    citys: list[str] | None
+    cities: list[str] | None
     quantityMin: int | None
     highPrice: float | None
     lowPrice: float | None
@@ -153,7 +153,7 @@ class SeatGeekInfoGathering(BaseMetric):
 
         if not infos:
             logger.warning("No data scraped at all from this page!")
-            
+        else:  
             sources = {}
             for info in infos:
                 src = info.get("source", "unknown_source")
@@ -284,6 +284,8 @@ class SeatGeekInfoGathering(BaseMetric):
         if quantityMin := query.get("quantityMin"):
             if info.get("ticketCount", 0) < quantityMin:
                 return False
+
+        return True
 
     @classmethod
     def _check_single_candidate_query(cls, query: SingleCandidateQuery, info: InfoDict) -> bool:

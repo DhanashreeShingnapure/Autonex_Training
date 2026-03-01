@@ -227,14 +227,14 @@ SCENARIOS: list[TaskScenario] = [
             "Find any upcoming UFC event and check ticket availability."
         ),
         queries=[[{
-            "event_categories": ["ufc"],
+            "event_names": ["UFC Event"],
         }]],
         location="United States",
         timezone="America/New_York",
         eventType="mma",
         tags=["ufc", "mma", "fight"],
-    )
-    ,]
+    ),
+    ]
 
 # =============================================================================
 # BROWSER MANAGER - Stealth browser configuration
@@ -370,7 +370,7 @@ class ResultReporter:
                 name = event.get("eventName", "unknown").title()
                 city = event.get("city") or "?"
                 date = event.get("date") or "?"
-                price = event.get("price")
+                price = event.get("pricePerTicket")
                 source = event.get("source") or "?"
                 
                 price_str = f"${price}" if price else "?"
