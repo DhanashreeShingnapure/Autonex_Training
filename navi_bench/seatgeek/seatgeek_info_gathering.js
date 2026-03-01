@@ -307,7 +307,6 @@
     } catch (e) {
         console.error("Ticketmaster Scraper failed", e);
     }
-
     return results;
 })();
 

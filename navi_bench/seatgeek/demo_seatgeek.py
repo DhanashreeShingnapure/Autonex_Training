@@ -217,6 +217,7 @@ SCENARIOS: list[TaskScenario] = [
         eventType="nba",
         tags=["heat", "nba", "basketball"],
     ),
+    
     TaskScenario(
         task_id="seatgeek/ufc-tickets/us-any-date/sports",
         name="UFC Event - Any Availability",
@@ -412,18 +413,43 @@ async def run_scenario(scenario: TaskScenario) -> dict:
     
     input("Press ENTER to launch browser...")
     
+    # async with async_playwright() as p:
+    #     browser_mgr = BrowserManager()
+    #     browser, context, page = await browser_mgr.launch(p)
+        
+    #     await evaluator.reset()
+    #     evaluator.attach_to_context(context)
+        
+    #     logger.info(f"Opening {scenario.url}")
+    #     try:
+    #         await page.goto(scenario.url, timeout=60000, wait_until="domcontentloaded")
+    #     except Exception as e:
+    #         logger.warning(f"Initial navigation timeout/error: {e}")
     async with async_playwright() as p:
-        browser_mgr = BrowserManager()
-        browser, context, page = await browser_mgr.launch(p)
+        browser = await p.chromium.launch(
+            headless=False,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+            ]
+        )
         
-        await evaluator.reset()
-        evaluator.attach_to_context(context)
+        context = await browser.new_context(
+            viewport={"width": 1280, "height": 720},
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            locale="en-US",
+            timezone_id="America/Los_Angeles",
+        )
         
-        logger.info(f"Opening {scenario.url}")
-        try:
-            await page.goto(scenario.url, timeout=60000, wait_until="domcontentloaded")
-        except Exception as e:
-            logger.warning(f"Initial navigation timeout/error: {e}")
+        # Remove the webdriver property that exposes automation
+        await context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+        """)
+        
+        page = await context.new_page()
+        
+        await page.goto(scenario.url, timeout=60_000, wait_until="load")
             
         await evaluator.update(page=page)
         
@@ -441,7 +467,7 @@ async def run_scenario(scenario: TaskScenario) -> dict:
             logger.warning(f"Final update failed: {e}")
         
         result = await evaluator.compute()
-        await browser_mgr.close()
+        await browser.close()
     
     reporter.print_result(result, evaluator, scenario)
     
